@@ -1,0 +1,39 @@
+Requisao http
+
+url: https://pokeapi.co/api/v2/pokemon?type=grass&name=i
+     ${endereco}/${path = caminho de identificacao do recurso}
+     Query String
+
+Request Method: GET | POST | PUT | DELETE
+
+Request Headers
+    Configuracao da api
+    Content-type: application/json
+
+Response Headers
+    Configuracao
+
+
+BODY - Corpo da requisicao (TIPO GET so pega os dados logo nao faz uso do Body)
+
+No exemplo aqui se fossemos utilizar o tipo POST estariamos dizendo que iriamos salvar um
+pokemon novo e precisariamos passar isso no body da requisicao logo no body encaminhariamos
+um json com tais informacoes.
+
+Body <- json ou qualquer que seja o content-type
+{
+    "name": "Pokemon novo"
+}
+
+Request body
+
+{
+    "name": "Pokemon novo"
+}
+
+Status CODE 
+200 - 299: SUCESS
+
+Responsae Headers
+
+response body
